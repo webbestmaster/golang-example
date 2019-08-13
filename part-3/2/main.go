@@ -41,4 +41,10 @@ func main() {
 	fmt.Println(sayanList)
 	fmt.Println(sayanList[0])
 	fmt.Println(sayanList[1])
+
+	scores := []int{1, 2, 3, 4, 5}
+	slice := scores[2:4]
+	slice[0] = 999
+
+	fmt.Println(scores) // [1 2 999 4 5]
 }
