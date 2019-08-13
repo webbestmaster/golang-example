@@ -10,14 +10,14 @@ type Saiyan struct {
 func extractPowers(saiyans []*Saiyan) []int {
 	powers := make([]int, len(saiyans))
 
+	saiyans[1] = &Saiyan{
+		Name:  "Say3",
+		Power: 500,
+	}
+
 	for index, saiyan := range saiyans {
 		powers[index] = saiyan.Power
 	}
-
-	saiyans = append(saiyans, &Saiyan{
-		Name:  "Say3",
-		Power: 500,
-	})
 
 	return powers
 }
@@ -37,10 +37,8 @@ func main() {
 
 	fmt.Println(extractPowers(sayanList))
 
-	sayanList[1].Power = 300
-
 	fmt.Println(sayanList)
 	fmt.Println(sayanList)
 	fmt.Println(sayanList[0])
-	fmt.Println(sayanList[0])
+	fmt.Println(sayanList[1])
 }
