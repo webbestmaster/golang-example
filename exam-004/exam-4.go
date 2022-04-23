@@ -18,7 +18,7 @@ func main() {
 	fmt.Println(sl)
 }
 
-// change slice
+// ChangeSlice change slice
 func ChangeSlice(items []int) {
 	items[2] = 1
 }
